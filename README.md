@@ -1,2 +1,2 @@
-# boltzz.github.io
+# boltzzhyper.github.io
 a test repository for my resume
