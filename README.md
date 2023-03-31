@@ -1,2 +1,3 @@
-# boltzzhyper.github.io
-a test repository for my resume
+# sanshz.github.io
+
+A repository to test GitHub Pages.
