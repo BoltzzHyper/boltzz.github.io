@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>To-Do List</title>
+  <head>
+    <title>My Website</title>
 	<link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-	<h1>To-Do List</h1>
-	<form>
-		<label for="new-task">Add Item:</label>
-		<input type="text" id="new-task" placeholder="New Item" />
-		<button type="submit">Add</button>
-	</form>
-	<ul id="task-list">
-		<li>
-			<input type="checkbox" />
-			<label>Example To-Do Item</label>
-			<button>Delete</button>
-		</li>
-	</ul>
-	<script>
-		// Add new item to list
-		document.querySelector('form').addEventListener('submit', function(event) {
-			event.preventDefault(); // Prevent form submission
-			let newTask = document.getElementById('new-task').value; // Get input value
-			let newListItem = document.createElement('li'); // Create new list item
-			let newCheckbox = document.createElement('input'); // Create new checkbox
-			newCheckbox.type = 'checkbox'; // Set type to checkbox
-			let newLabel = document.createElement('label'); // Create new label
-			newLabel.textContent = newTask; // Set label text to input value
-			let newButton = document.createElement('button'); // Create new delete button
-			newButton.textContent = 'Delete'; // Set button text to 'Delete'
-			newListItem.appendChild(newCheckbox); // Add checkbox to list item
-			newListItem.appendChild(newLabel); // Add label to list item
-			newListItem.appendChild(newButton); // Add delete button to list item
-			document.getElementById('task-list').appendChild(newListItem); // Add list item to list
-			document.getElementById('new-task').value = ''; // Clear input value
-		});
+    <script src="assets/js/extend.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>My Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-		// Delete item from list
-		document.querySelector('#task-list').addEventListener('click', function(event) {
-			if (event.target.tagName === 'BUTTON') { // If delete button clicked
-				event.target.parentNode.remove(); // Remove list item from list
-			}
-		});
-	</script>
-</body>
+    <main>
+      <section>
+        <h2>Welcome to my website!</h2>
+        <p>This is a sample website built using HTML and CSS.</p>
+      </section>
+
+      <section>
+        <h2>Latest News</h2>
+        <ul>
+          <li>
+            <h3>Article Title 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo iaculis purus, in posuere lorem euismod quis.</p>
+          </li>
+          <li>
+            <h3>Article Title 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo iaculis purus, in posuere lorem euismod quis.</p>
+          </li>
+          <li>
+            <h3>Article Title 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo iaculis purus, in posuere lorem euismod quis.</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
 </html>
