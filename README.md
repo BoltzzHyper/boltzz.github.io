@@ -1,5 +1,3 @@
 # sanshz.github.io
 
-A repository to test GitHub Pages.
-
-(layout and design)
+A repository for my portfolio website.
