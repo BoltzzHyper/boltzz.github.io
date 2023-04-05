@@ -25,7 +25,7 @@ header {
   color: #dee2e6;
   max-width: 100%;
   border-bottom: 1px solid rgba(255,255,255,.15);
-  box-shadow: 0 5px 5px -2px #000000bf;
+  box-shadow: 0 0.4rem 0.4rem -0.125rem #000000bf;
 }
 
 header div {
@@ -73,9 +73,6 @@ footer {
   margin-top: auto;
   display: flex;
   flex-flow: nowrap ;
-  /* text-align: center;
-  margin-left: auto;
-  margin-right: auto; */
 }
 
 footer>div {
@@ -123,29 +120,20 @@ footer p {
   height: 4rem;
 }
 
+/*---*/
+
 main {
-  display: flex;
-  flex-flow: nowrap;
-  gap: 10px;
-  margin: 20px auto 0px auto;
-  padding: 20px;
+  max-width: 100%;
+  height: auto;
 }
 
-.boxmainone {
-  max-width: 500px;
+main>div {
+  max-width: 45rem;
+  height: 15rem;
+  margin: 0 auto;
 }
 
-.boxmaintwo {
-  max-width: 220px;
-}
-
-.boxmaintwo img {
-  width: 170px;
-  height: 170px;
-  border-radius: 50%;
-}
-
-section {
+/* section {
   margin-bottom: 40px;
 }
 
@@ -165,4 +153,4 @@ section li {
 
 section li h3 {
   margin-top: 0;
-}
+} */
