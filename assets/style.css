@@ -1,16 +1,13 @@
-/* Set box-sizing to border-box for all elements */
 * {
   box-sizing: border-box;
 }
 
-/* Reset default margin and padding */
 html, body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
 }
 
-/* Style the header */
 header {
   background-color: #141517;
   color: #dee2e6;
@@ -47,7 +44,6 @@ header nav a {
   text-decoration: none;
 }
 
-/* Style the main section */
 main {
   display: flex;
   flex-flow: nowrap;
@@ -92,7 +88,6 @@ section li h3 {
   margin-top: 0;
 }
 
-/* Style the footer */
 footer {
   background-color: #141517;
   color: #dee2e6;
@@ -138,7 +133,6 @@ footer p {
   padding: 25px 0px 25px 0px;
 }
 
-/* Sticky footer and font*/
 body {
   background-color: #141517;
   color: #dee2e6;
